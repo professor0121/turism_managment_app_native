@@ -17,12 +17,20 @@ const Drawer = ({ isDrawerOpen, toggleDrawer, setActivePage }) => {
           <Text style={styles.drawerText}>Destinations</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.drawerItem} onPress={() => { setActivePage('profile'); toggleDrawer(); }}>
-          <MaterialIcons name="profile" size={24} color="#fff" />
+          <MaterialIcons name="book-online" size={24} color="#fff" />
           <Text style={styles.drawerText}>Profile</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.drawerItem} onPress={() => { setActivePage('settings'); toggleDrawer(); }}>
           <MaterialIcons name="book-online" size={24} color="#fff" />
           <Text style={styles.drawerText}>Setting</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.drawerItem} onPress={() => { setActivePage('cardscrollbar'); toggleDrawer(); }}>
+          <MaterialIcons name="book-online" size={24} color="#fff" />
+          <Text style={styles.drawerText}>scroll bar</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.drawerItem} onPress={() => { setActivePage('youtube'); toggleDrawer(); }}>
+          <MaterialIcons name="book-online" size={24} color="#fff" />
+          <Text style={styles.drawerText}>Youtube</Text>
         </TouchableOpacity>
       </ScrollView>
     </Animated.View>

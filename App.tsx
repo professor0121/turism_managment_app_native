@@ -8,6 +8,8 @@ import HomeScreen from './components/HomeScreen';
 import DestinationList from './components/DestinationList';
 import ProfileScreen from './components/ProfileScreen';
 import SettingsScreen from './components/SettingsScreen';
+import CardScrollBar from './components/CardScrollBar';
+import Youtube from './components/Youtube'
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -35,6 +37,10 @@ const App = () => {
         return <ProfileScreen user={user} />;
       case 'settings':
         return <SettingsScreen />;
+      case 'cardscrollbar':
+        return <CardScrollBar />;
+      case 'youtube':
+        return <Youtube/>;
       default:
         return <HomeScreen />;
     }
